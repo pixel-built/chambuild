@@ -553,6 +553,76 @@ p{font-size:clamp(.92rem,1vw,1.03rem);line-height:1.75;letter-spacing:0;max-widt
 #about .v36-education.education-motion-ready>.v36-milestone.education-in-view{opacity:1;transform:translate3d(0,0,0)}
 @media(max-width:600px){#about .v36-education-section{padding-top:34px}#about .v36-education-intro{margin-bottom:13px}#about .v36-education{padding-left:0!important}#about .v36-education:before{left:12px;top:30px;bottom:50px}#about .v36-education>.v36-milestone{min-height:125px;padding:19px 26px 19px 42px}#about .v36-education>.v36-milestone:before{left:6px;width:12px;height:12px;border-width:3px}#about .v36-education>.v36-milestone:after{right:0;top:14px}}
 @media(prefers-reduced-motion:reduce){#about .v36-education>.v36-milestone{opacity:1!important;transform:none!important;transition:none!important}}
+</style><style id="v37-values-experience">
+/* Refined architectural value panels, intentionally restrained. */
+#about .v37-values{margin-top:clamp(42px,5vw,68px)!important}
+#about .v37-values h3{margin-bottom:19px!important}
+#about .v37-values .v32-value-items{gap:12px!important}
+#about .v37-values .v32-value-items>div{position:relative;isolation:isolate;min-height:162px;overflow:hidden;padding:25px 23px 24px!important;border-radius:13px;background:linear-gradient(150deg,#24282b 0%,#1a1d20 90%);border:1px solid rgba(255,255,255,.075);display:flex;justify-content:space-between;align-items:flex-start;transform:perspective(900px) rotateX(var(--rx,0deg)) rotateY(var(--ry,0deg)) translateY(0);transition:transform .32s ease,background .35s ease,border-color .35s ease,box-shadow .35s ease!important;box-shadow:0 10px 28px rgba(0,0,0,.07)}
+#about .v37-values .v32-value-items>div:before{content:"";position:absolute;inset:0;pointer-events:none;z-index:-1;opacity:0;background:radial-gradient(230px circle at var(--mx,50%) var(--my,50%),rgba(241,90,43,.17),transparent 70%);transition:opacity .4s ease}
+#about .v37-values .v32-value-items>div:after{content:"";position:absolute;right:-27px;bottom:-45px;width:130px;height:130px;border:1px solid rgba(241,90,43,.14);border-radius:50%;pointer-events:none;transition:transform .5s ease,border-color .4s ease}
+#about .v37-values .v32-value-items>div:hover{transform:perspective(900px) rotateX(var(--rx,0deg)) rotateY(var(--ry,0deg)) translateY(-5px);border-color:rgba(241,90,43,.4);box-shadow:0 19px 38px rgba(0,0,0,.23)}
+#about .v37-values .v32-value-items>div:hover:before{opacity:1}
+#about .v37-values .v32-value-items>div:hover:after{transform:scale(1.22);border-color:rgba(241,90,43,.3)}
+#about .v37-values .v32-value-items small{font-size:12px!important;letter-spacing:.14em!important;color:#f15a2b!important}
+#about .v37-values .v32-value-items span{font-size:clamp(15px,1.3vw,19px)!important;font-weight:570!important;line-height:1.35!important;max-width:210px;position:relative;z-index:1}
+/* A concise, two-column experience panel replaces the email-like text stack. */
+#about .v37-experience{display:grid!important;grid-template-columns:minmax(180px,.8fr) minmax(0,1.8fr);align-items:center;gap:clamp(18px,3vw,50px)!important;padding:29px clamp(22px,3vw,42px)!important;margin:24px 0 0;border:1px solid rgba(255,255,255,.075)!important;border-radius:13px;background:linear-gradient(110deg,#222629,#1b1e21);position:relative;overflow:hidden}
+#about .v37-experience:before{content:"";position:absolute;left:0;top:0;bottom:0;width:3px;background:#f15a2b}
+#about .v37-experience .v36-kicker{grid-column:1;grid-row:1;font-size:11px!important;align-self:end}
+#about .v37-experience strong{grid-column:1;grid-row:2;font-size:clamp(20px,2vw,27px)!important;line-height:1.2;align-self:start;font-weight:630!important}
+#about .v37-experience p{grid-column:2;grid-row:1 / span 2;max-width:410px;font-size:clamp(14px,1.2vw,17px)!important;line-height:1.65!important;color:#c9cccd!important;padding-left:clamp(15px,3vw,40px);border-left:1px solid rgba(255,255,255,.14);margin:0!important}
+@media(max-width:760px){#about .v37-values .v32-value-items{grid-template-columns:repeat(2,minmax(0,1fr))!important}#about .v37-values .v32-value-items>div{min-height:145px;padding:21px 19px!important}#about .v37-experience{grid-template-columns:1fr;gap:7px!important;padding:24px 24px!important}#about .v37-experience .v36-kicker,#about .v37-experience strong,#about .v37-experience p{grid-column:1;grid-row:auto}#about .v37-experience p{border-left:0;padding-left:0;margin-top:8px!important}}
+@media(max-width:390px){#about .v37-values .v32-value-items>div{min-height:136px;padding:17px 15px!important}#about .v37-values .v32-value-items span{font-size:14px!important}}
+@media(hover:none),(prefers-reduced-motion:reduce){#about .v37-values .v32-value-items>div,#about .v37-values .v32-value-items>div:hover{transform:none!important}#about .v37-values .v32-value-items>div:before{display:none}}
+</style>
+<style id="v38-values-experience-refinement">
+/* Tight, elegant values cards; staggered scroll reveal without artificial scroll trapping. */
+#about .v37-values{margin-top:clamp(30px,3.4vw,44px)!important}
+#about .v37-values h3{margin-bottom:14px!important}
+#about .v37-values .v32-value-items{gap:clamp(9px,1vw,14px)!important}
+#about .v37-values .v32-value-items>div{min-height:132px!important;padding:20px 20px 18px!important;border-radius:11px!important;transition:opacity .65s ease,transform .7s cubic-bezier(.18,.8,.2,1),border-color .3s,box-shadow .3s!important;transition-delay:var(--v38-delay,0ms)!important}
+#about .v37-values .v32-value-items>div:after{width:88px!important;height:88px!important;right:-27px!important;bottom:-42px!important;opacity:.6}
+#about .v37-values .v32-value-items>div:hover{box-shadow:0 13px 25px #0004!important;border-color:#f15a2b55!important}
+
+
+#about .v37-values .v32-value-items span{font-size:clamp(15px,1.22vw,18px)!important}
+/* Experience as a clean typographic feature, not a bordered dashboard card. */
+#about .v32-background{margin-top:clamp(36px,4vw,54px)!important}
+#about .v38-experience{display:flex!important;flex-direction:column!important;align-items:flex-start!important;gap:8px!important;max-width:650px;padding:7px 0 7px 23px!important;margin:18px 0 0!important;background:none!important;border:0!important;border-radius:0!important;box-shadow:none!important;overflow:visible!important;position:relative}
+#about .v38-experience:before{content:""!important;position:absolute!important;left:0!important;top:8px!important;bottom:8px!important;width:3px!important;background:#f15a2b!important;border-radius:2px}
+#about .v38-experience .v36-kicker{grid-column:auto!important;grid-row:auto!important;font-size:11px!important;letter-spacing:.15em}
+#about .v38-experience strong{grid-column:auto!important;grid-row:auto!important;font-size:clamp(21px,2vw,27px)!important;line-height:1.3!important;margin:0!important}
+#about .v38-experience p{grid-column:auto!important;grid-row:auto!important;padding:0!important;border:0!important;margin:0!important;max-width:none!important;font-size:15px!important;line-height:1.6!important;color:#bfc3c6!important}
+@media(max-width:760px){#about .v37-values .v32-value-items{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:10px!important}#about .v37-values .v32-value-items>div{min-height:128px!important;padding:17px 15px!important}#about .v37-values .v32-value-items span{font-size:clamp(13px,3.8vw,16px)!important}#about .v32-background{margin-top:33px!important}#about .v38-experience{padding-left:18px!important;margin-top:10px!important}}
+@media(max-width:360px){#about .v37-values .v32-value-items>div{min-height:120px!important;padding:15px 12px!important}}
+@media(prefers-reduced-motion:reduce){#about .v37-values .v32-value-items>div{opacity:1!important;--v38-enter:0px!important;transition:none!important}}
+</style><style id="v42-scroll-motion">
+#about .v37-values{margin-top:24px!important}
+#about .v37-values .v32-value-items{gap:10px!important;perspective:1100px}
+#about .v37-values .v32-value-items>div{min-height:106px!important;padding:16px 18px!important;gap:13px!important;display:flex!important;flex-direction:column!important;justify-content:space-between!important;transform-origin:center 85%;backface-visibility:hidden;will-change:transform,opacity;transition:border-color .25s,box-shadow .25s!important}
+#about .v37-values .v32-value-items>div span{line-height:1.24!important}
+#about .v37-values .v32-value-items>div:after{width:62px!important;height:62px!important;right:-20px!important;bottom:-34px!important}
+#about .v36-education>.v36-milestone{transition:none!important;will-change:transform,opacity}
+@media(max-width:760px){#about .v37-values .v32-value-items{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:9px!important}#about .v37-values .v32-value-items>div{min-height:108px!important;padding:15px 13px!important}#about .v37-values .v32-value-items span{font-size:clamp(13px,3.5vw,16px)!important}}
+@media(prefers-reduced-motion:reduce){#about .v37-values .v32-value-items>div,#about .v36-education>.v36-milestone{transform:none!important;opacity:1!important;will-change:auto!important}}
+</style><style id="v43-experience-clean">
+/* Founder background: a single cohesive editorial panel, no duplicate education title. */
+#about .v43-experience{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);align-items:center;gap:clamp(24px,4vw,68px);padding:clamp(24px,3.4vw,44px);border-radius:16px;background:linear-gradient(115deg,#1d2022,#17191b 75%);border:1px solid rgba(255,255,255,.055);margin-top:clamp(26px,3vw,40px)}
+#about .v43-experience-head{min-width:0}
+#about .v43-kicker,#about .v43-country-label{display:block;font:700 11px/1.5 Inter,Arial,sans-serif;letter-spacing:.15em;color:#f15a2b}
+#about .v43-experience-head h3{font-family:Inter,Arial,sans-serif!important;font-size:clamp(24px,2.7vw,37px)!important;font-weight:650!important;letter-spacing:-.04em!important;line-height:1.19!important;margin:13px 0 0!important;color:#f4f4f3!important}
+#about .v43-experience-head h3 em{font-style:normal;color:#f15a2b}
+#about .v43-experience-detail{display:flex;align-items:flex-start;gap:17px;min-width:0}
+#about .v43-location-icon{display:flex;flex:none;align-items:center;justify-content:center;width:46px;height:46px;border-radius:12px;background:rgba(241,90,43,.10);color:#f15a2b}
+#about .v43-location-icon svg{width:22px;height:22px}
+#about .v43-country-label{font-size:10px;letter-spacing:.14em;color:#9c9e9f;margin-bottom:6px}
+#about .v43-experience-detail strong{display:block;color:#f5f5f5;font-size:clamp(19px,2vw,25px);line-height:1.25;font-weight:650;letter-spacing:-.03em}
+#about .v43-experience-detail p{color:#b4b7b9;font-size:clamp(13px,1.15vw,16px);line-height:1.6;margin:8px 0 0}
+#about .v39-background{margin-top:30px!important}
+#about .v39-background .v36-education-section{margin-top:clamp(38px,5vw,62px)!important}
+@media(max-width:700px){#about .v43-experience{grid-template-columns:1fr;gap:25px;padding:24px 21px;border-radius:13px}#about .v43-experience-head h3{font-size:27px!important}#about .v43-experience-detail{gap:13px}#about .v43-location-icon{width:40px;height:40px}#about .v39-background .v36-education-section{margin-top:38px!important}}
+@media(prefers-reduced-motion:reduce){#about .v43-experience{transition:none!important}}
 </style></head><body><header class="topbar"><div class="wrap nav"><a aria-label="CHAMBUILD Home" class="logo" href="#home"><img alt="CHAMBUILD — Your Vision, Our Commitment" class="brand-logo" src="chambuild-logo-brand.png"/></a><nav aria-label="Primary navigation" class="navlinks" id="navlinks"><a href="#home">Home</a><a href="#about">About</a><a href="#services">Services</a><a href="#projects">Projects</a><a href="#standards">Standards</a><a href="#careers">Careers</a><a class="mobile-quote-link" href="#contact">Get a Quote <span>↗</span></a></nav><a class="btn nav-cta" href="#contact">Get a Quote <span>↗</span></a><button aria-controls="navlinks" aria-expanded="false" aria-label="Open menu" class="menu-toggle" id="menuToggle">☰</button></div></header><main id="main">
 <section aria-label="Home page" class="page active" id="home"><section aria-label="Scroll-controlled CHAMBUILD film" class="film-sequence" id="filmSequence"><div class="film-sticky"><video aria-label="Architectural film controlled by scrolling" class="film-video" id="filmVideo" muted="" playsinline="" poster="chambuild-video-poster.jpg" preload="auto"><source src="chambuild-scroll-video.mp4" type="video/mp4"/></video><div class="film-shade"></div><div class="film-copy wrap"><span class="film-kicker">CHAMBUILD / THE GAMBIA</span><h1>Building with<br/><em>purpose.</em></h1><p>Construction, engineering and property improvement, thoughtfully delivered.</p><a class="btn" href="#services">Explore our services ↗</a></div></div></section>
 <section aria-label="Explore project perspectives" class="motion-gallery"><div class="wrap"><div class="motion-heading"><div><div class="eyebrow">Inspiration in motion</div><h2>Places with <em>purpose.</em></h2></div><p>Explore the spaces and disciplines shaping our approach. Images are illustrative concepts, not completed CHAMBUILD commissions.</p><div class="motion-controls"><button aria-label="Previous image" id="motionPrev" type="button">←</button><button aria-label="Next image" id="motionNext" type="button">→</button></div></div><div aria-label="Image carousel, use arrow keys" class="motion-viewport" id="motionViewport" tabindex="0"><div class="motion-track" id="motionTrack">
@@ -564,8 +634,8 @@ p{font-size:clamp(.92rem,1vw,1.03rem);line-height:1.75;letter-spacing:0;max-widt
 </div></div><div aria-hidden="true" class="motion-progress"><i id="motionProgress"></i></div></div></section><div class="section alt"><div class="wrap"><div class="section-intro reveal"><div><div class="eyebrow">Capabilities</div><h2>Expertise across the <em>built environment.</em></h2></div><a class="btn outline" href="#services">All 13 Disciplines ↗</a></div><div class="grid g3" id="homeServices"></div></div></div></section>
 <section aria-label="About CHAMBUILD" class="page" id="about"><div class="page-hero"><div class="wrap"><div class="eyebrow">About CHAMBUILD</div><h1 class="editorial-heading">Built on purpose.<br/><em>Driven by people.</em></h1><p>We bring a considered, collaborative approach to construction, engineering and property improvement in The Gambia.</p></div></div><section aria-label="Founder and CEO" class="section founder-v32"><div class="wrap v32-container">
 <div class="v32-profile reveal"><div class="v32-identity"><span class="v32-label">FOUNDER &amp; CEO | CHAMBUILD LTD</span><h2>Hamidou Cham</h2><span aria-hidden="true" class="v32-orange-bar"></span></div><div class="v32-biography"><p>Hamidou Cham is the founder of Chambuild, a Gambian construction company established in 2024 and built on quality construction, professionalism and long-term investment in the built environment.</p><p>Trained in civil engineering and construction management, Hamidou brings hands-on construction experience from his time working in the United States, together with an international education, home to The Gambia.</p><p>For Hamidou, construction is more than putting up buildings. It is creating homes, strengthening communities, generating employment and raising standards across the industry.</p><p>His vision is simple: to help build a stronger Gambia, one project at a time.</p></div></div>
-<div class="v32-values reveal" aria-label="What guides CHAMBUILD"><h3>WHAT GUIDES CHAMBUILD</h3><div class="v32-value-items"><div><small>01</small><span>Integrity</span></div><div><small>02</small><span>Accountability</span></div><div><small>03</small><span>Quality Workmanship</span></div><div><small>04</small><span>Client Commitment</span></div></div></div>
-<div class="v32-background v36-background"><div class="v32-background-heading reveal"><h3>Background</h3><p>Experience &amp; education</p></div><div class="v36-experience reveal"><span class="v36-kicker">EXPERIENCE</span><strong>United States</strong><p>Hands-on construction experience</p></div><section class="v36-education-section" aria-label="Education timeline"><div class="v36-education-intro reveal"><span class="v36-kicker">EDUCATION</span><h3>A journey of learning.</h3><p>From Brikama to the United States — a foundation in engineering and construction management.</p></div><div class="v32-education v36-education"><div class="v36-milestone" data-step="01"><strong>Tawfic Islamic School, Brikama</strong><span>Arabic school</span></div><div class="v36-milestone" data-step="02"><strong>Alma Dina High School, Brikama</strong><span>Grades 7–8</span></div><div class="v36-milestone" data-step="03"><strong>SBEC International High School</strong><span>High school</span></div><div class="v36-milestone" data-step="04"><strong>Albert Einstein High School, USA</strong><span>Freshman through senior year</span></div><div class="v36-milestone" data-step="05"><strong>Montgomery College</strong><span>Major in Civil Engineering, minor in Construction Management</span></div><div class="v36-milestone" data-step="06"><strong>Louisiana State University (LSU)</strong><span>B.S. in Construction Engineering</span></div><div class="v36-milestone" data-step="07"><strong>Louisiana State University (LSU)</strong><span>Master’s in Civil Engineering</span></div></div></section></div></div></section><div class="section alt"><div class="wrap"><div class="section-intro reveal"><div><div class="eyebrow">Corporate DNA</div><h2>Clear direction.<br/><em>Lasting ambition.</em></h2></div></div><div class="grid g2"><article class="card reveal"><span class="number">01 / MISSION</span><h3>Deliver with confidence.</h3><p>To support clients through reliable construction, engineering and property improvement services that prioritize quality, safety, transparency and practical outcomes.</p></article><article class="card reveal"><span class="number">02 / VISION</span><h3>Help shape tomorrow.</h3><p>To contribute to a stronger and more sustainable built environment in The Gambia through innovation, responsible practice and long-term client partnerships.</p></article></div></div></div><div class="section"><div class="wrap"><div class="eyebrow reveal">How we work</div><h2 class="reveal">Principled from <em>day one.</em></h2><div class="grid g3" id="aboutPillars"></div></div></div></section>
+<div class="v32-values v37-values reveal" aria-label="What guides CHAMBUILD"><h3>WHAT GUIDES CHAMBUILD</h3><div class="v32-value-items"><div><small>01</small><span>Integrity</span></div><div><small>02</small><span>Accountability</span></div><div><small>03</small><span>Quality Workmanship</span></div><div><small>04</small><span>Client Commitment</span></div></div></div>
+<div class="v32-background v36-background v39-background"><div class="v43-experience reveal" aria-label="Founder experience"><div class="v43-experience-head"><span class="v43-kicker">PROFESSIONAL EXPERIENCE</span><h3>Experience shaped<br><em>by practice.</em></h3></div><div class="v43-experience-detail"><span class="v43-location-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg></span><div><span class="v43-country-label">LOCATION</span><strong>United States</strong><p>Hands-on construction experience</p></div></div></div><section class="v36-education-section" aria-label="Education timeline"><div class="v36-education-intro reveal"><span class="v36-kicker">EDUCATION</span><h3>A journey of learning.</h3><p>From Brikama to the United States — a foundation in engineering and construction management.</p></div><div class="v32-education v36-education"><div class="v36-milestone" data-step="01"><strong>Tawfic Islamic School, Brikama</strong><span>Arabic school</span></div><div class="v36-milestone" data-step="02"><strong>Alma Dina High School, Brikama</strong><span>Grades 7–8</span></div><div class="v36-milestone" data-step="03"><strong>SBEC International High School</strong><span>High school</span></div><div class="v36-milestone" data-step="04"><strong>Albert Einstein High School, USA</strong><span>Freshman through senior year</span></div><div class="v36-milestone" data-step="05"><strong>Montgomery College</strong><span>Major in Civil Engineering, minor in Construction Management</span></div><div class="v36-milestone" data-step="06"><strong>Louisiana State University (LSU)</strong><span>B.S. in Construction Engineering</span></div><div class="v36-milestone" data-step="07"><strong>Louisiana State University (LSU)</strong><span>Master’s in Civil Engineering</span></div></div></section></div></div></section><div class="section alt"><div class="wrap"><div class="section-intro reveal"><div><div class="eyebrow">Corporate DNA</div><h2>Clear direction.<br/><em>Lasting ambition.</em></h2></div></div><div class="grid g2"><article class="card reveal"><span class="number">01 / MISSION</span><h3>Deliver with confidence.</h3><p>To support clients through reliable construction, engineering and property improvement services that prioritize quality, safety, transparency and practical outcomes.</p></article><article class="card reveal"><span class="number">02 / VISION</span><h3>Help shape tomorrow.</h3><p>To contribute to a stronger and more sustainable built environment in The Gambia through innovation, responsible practice and long-term client partnerships.</p></article></div></div></div><div class="section"><div class="wrap"><div class="eyebrow reveal">How we work</div><h2 class="reveal">Principled from <em>day one.</em></h2><div class="grid g3" id="aboutPillars"></div></div></div></section>
 <section aria-label="Our services" class="page" id="services"><div class="page-hero"><div class="wrap"><div class="eyebrow">Our Expertise</div><h1 class="editorial-heading">End-to-end <em>capability.</em></h1><p>Thirteen complementary disciplines spanning the planning, construction, enhancement and ongoing care of built spaces.</p></div></div><div class="section"><div class="wrap"><div class="grid g3" id="serviceGrid"></div><p class="note">Technical scope, professional qualifications, approvals and delivery arrangements are confirmed for each project.</p></div></div></section>
 <section aria-label="Project categories" class="page" id="projects"><div class="page-hero"><div class="wrap"><div class="eyebrow">Design &amp; Project Perspectives</div><h1 class="editorial-heading">Spaces that <em>inspire.</em></h1><p>Explore the types of work and design thinking that inform our approach to the built environment.</p></div></div><div class="section"><div class="wrap"><div aria-label="Project category filters" class="filters" id="projectFilters"></div><div class="portfolio" id="projectGrid"></div><p class="note">Photography shown is illustrative of project categories and design direction, not a verified record of completed CHAMBUILD commissions.</p></div></div></section>
 <section aria-label="Our standards" class="page" id="standards"><div class="page-hero"><div class="wrap"><div class="eyebrow">Responsibility &amp; Standards</div><h1 class="editorial-heading">Excellence is <em>intentional.</em></h1><p>Quality, environmental stewardship and occupational safety guide the principles behind our approach.</p></div></div><div class="section"><div class="wrap split"><div class="reveal"><div class="eyebrow">International frameworks</div><h2>Globally informed.<br/><em>Locally committed.</em></h2><p>Our approach draws on internationally recognized management principles to encourage consistent delivery, responsible resource use and safer working environments.</p><p class="note">References to ISO frameworks indicate alignment with their principles; they do not represent a claim of ISO certification.</p></div><div class="reveal"><div class="standard standard-refined"><strong>ISO 9001</strong><div><h3>Quality Management</h3><p>Client focus, documented processes, quality assurance and continuous improvement.</p></div></div><div class="standard standard-refined"><strong>ISO 14001</strong><div><h3>Environmental Management</h3><p>Resource awareness, environmental responsibility and reduced project impact.</p></div></div><div class="standard standard-refined"><strong>ISO 45001</strong><div><h3>Occupational Health &amp; Safety</h3><p>Hazard awareness, safer work practices and protection of people on site.</p></div></div></div></div></div></section>
@@ -745,17 +815,50 @@ function schedule(){if(!scheduled){scheduled=true;requestAnimationFrame(update)}
  const obs=new MutationObserver(records=>{for(const r of records){for(const n of r.addedNodes){if(n.nodeType===3)convert(n);else if(n.nodeType===1)walk(n)}}});obs.observe(document.body,{subtree:true,childList:true});
 })();
 </script>
-<script id="education-scroll-timeline-script-v36">
-(function(){
- const list=document.querySelector('#about .v36-education');
- if(!list)return;
- const items=[...list.querySelectorAll('.v36-milestone')];
- if(!('IntersectionObserver' in window)||matchMedia('(prefers-reduced-motion: reduce)').matches)return;
- const observer=new IntersectionObserver(entries=>{
-  entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('education-in-view');observer.unobserve(entry.target)}});
- },{threshold:.12,rootMargin:'0px 0px -8% 0px'});
- items.forEach(el=>observer.observe(el));
- list.classList.add('education-motion-ready');
-})();
+
+<script id="v37-values-motion">
+(()=>{const cards=document.querySelectorAll('#about .v37-values .v32-value-items>div');if(!window.matchMedia('(hover:hover) and (pointer:fine)').matches||window.matchMedia('(prefers-reduced-motion:reduce)').matches)return;cards.forEach(card=>{card.addEventListener('pointermove',e=>{const r=card.getBoundingClientRect(),x=(e.clientX-r.left)/r.width,y=(e.clientY-r.top)/r.height;card.style.setProperty('--mx',(x*100)+'%');card.style.setProperty('--my',(y*100)+'%');card.style.setProperty('--rx',((.5-y)*4)+'deg');card.style.setProperty('--ry',((x-.5)*5)+'deg')});card.addEventListener('pointerleave',()=>{card.style.setProperty('--rx','0deg');card.style.setProperty('--ry','0deg')})})})();
 </script>
-</body></html>
+<script id="v42-reversible-scroll-motion">
+(()=>{
+ const cards=[...document.querySelectorAll('#about .v37-values .v32-value-items>div')];
+ const milestones=[...document.querySelectorAll('#about .v36-education>.v36-milestone')];
+ const reduced=matchMedia('(prefers-reduced-motion: reduce)').matches;
+ if(!cards.length||reduced)return;
+ // Unlike one-shot IntersectionObserver, progress is calculated on every scroll.
+ // Scrolling up reverses the same animation; scrolling down plays it again.
+ const clamp=(x)=>Math.max(0,Math.min(1,x));
+ const ease=(t)=>t*t*(3-2*t);
+ let frame=0;
+ function render(){frame=0;
+  const active=document.querySelector('#about.page.active');
+  if(!active)return;
+  const vh=window.innerHeight;
+  const area=document.querySelector('#about .v37-values .v32-value-items');
+  const rect=area.getBoundingClientRect();
+  // The first card starts flipping when the row approaches the lower viewport.
+  // Individual offsets produce a visible left-to-right cascade, and reverse on scroll up.
+  const t=clamp((vh*.87-rect.top)/(Math.min(vh*.48,390)));
+  cards.forEach((card,i)=>{
+    const p=ease(clamp((t-i*.135)/.57));
+    const rotation=(1-p)*-67;
+    const lift=(1-p)*36;
+    card.style.setProperty('transform',`perspective(950px) rotateX(${rotation.toFixed(2)}deg) translateY(${lift.toFixed(1)}px)`, 'important');
+    card.style.setProperty('opacity',String(Math.max(.12,p)), 'important');
+  });
+  milestones.forEach((el,i)=>{
+    const r=el.getBoundingClientRect();
+    // Each item fully appears near the center of the viewport, then resets on upward scroll.
+    const p=ease(clamp((vh*.9-r.top)/(vh*.30)));
+    el.style.setProperty('transform',`translate3d(0,${((1-p)*43).toFixed(1)}px,0)`, 'important');
+    el.style.setProperty('opacity',String(Math.max(.12,p)), 'important');
+  });
+ }
+ function schedule(){if(!frame)frame=requestAnimationFrame(render)}
+ window.addEventListener('scroll',schedule,{passive:true});
+ window.addEventListener('resize',schedule,{passive:true});
+ window.addEventListener('hashchange',()=>requestAnimationFrame(schedule));
+ // If the browser restores a scrolled position, initialize after layout.
+ requestAnimationFrame(()=>requestAnimationFrame(render));
+})();
+</script></body></html>
