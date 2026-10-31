@@ -348,12 +348,61 @@ p{font-size:clamp(.92rem,1vw,1.03rem);line-height:1.75;letter-spacing:0;max-widt
 #home .motion-gallery{height:auto!important;min-height:0!important;padding:clamp(30px,4vw,58px) 0 clamp(22px,3vw,42px)!important;overflow:hidden!important}
 #home .motion-gallery>.wrap{position:relative!important;top:auto!important;height:auto!important;max-height:none!important;min-height:0!important;display:flex!important;flex-direction:column!important;justify-content:flex-start!important;padding:0!important;overflow:visible!important}
 #home .motion-heading{margin-bottom:clamp(14px,2vw,24px)!important}
-#home .motion-track{transition:transform .48s cubic-bezier(.25,1,.5,1)!important}
+#home .motion-track{transition:none!important}
 #home .motion-progress{margin-top:14px!important}
 #home>.section.alt{padding-top:clamp(24px,3vw,42px)!important}
 #home .motion-controls button:disabled{opacity:.35;cursor:default}
 @media(max-width:600px){#home .motion-gallery{padding:25px 0 20px!important}#home .motion-slide{height:clamp(200px,32svh,280px)!important}#home>.section.alt{padding-top:22px!important}}
 @media(prefers-reduced-motion:reduce){#home .motion-track{transition:none!important}}
+</style><style id="v22-image-edge-fix">
+/* V22: keep photographic panels fully covered throughout scroll.
+   Avoid moving layered CSS backgrounds: on some browsers the drift exposes
+   an edge of the background image, creating a visible duplicate strip. */
+#about .portrait, .feature-image {
+  background-position:center center !important;
+  background-size:cover !important;
+  background-repeat:no-repeat !important;
+  transform:none !important;
+  isolation:isolate;
+  overflow:hidden;
+  backface-visibility:hidden;
+}
+#about .portrait { background-color:#111417; }
+</style>
+<style id="founder-leadership-style">
+.founder-section{padding-top:clamp(46px,6vw,90px)!important;padding-bottom:clamp(52px,6vw,90px)!important}.founder-heading{margin-bottom:32px}.founder-heading h2{margin:10px 0 0}.founder-layout{display:grid;grid-template-columns:minmax(260px,.85fr) minmax(0,1.15fr);gap:clamp(28px,5vw,76px);align-items:start}.founder-identity{border-radius:24px;overflow:hidden;background:#191c20}.founder-art{height:clamp(280px,33vw,480px);background:radial-gradient(circle at 76% 24%,rgba(241,90,43,.22),transparent 36%),linear-gradient(135deg,#23282d,#101214 70%);display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}.founder-art:before{content:"";position:absolute;inset:24px;border:1px solid rgba(255,255,255,.09);border-radius:12px}.founder-art-mark{font-family:Arial,sans-serif;font-size:clamp(94px,15vw,190px);font-weight:800;letter-spacing:-.12em;line-height:1;color:#f2f1ef;transform:translateX(-.07em)}.founder-art-dot{color:#f15a2b}.founder-art-label{position:absolute;bottom:42px;left:45px;font-size:11px;letter-spacing:.2em;color:#aaa}.founder-identity-footer{padding:24px 28px 28px;display:flex;flex-direction:column;gap:5px}.founder-identity-footer>span,.founder-identity-footer small{font-size:11px;letter-spacing:.13em;color:#f15a2b}.founder-identity-footer strong{font-size:clamp(22px,2.5vw,32px);font-weight:600;color:#fff}.founder-identity-footer small{color:#a7aaae}.founder-story h3{font-size:clamp(32px,4vw,56px);margin:14px 0 22px}.founder-story p{margin:0 0 18px;line-height:1.75;color:#b6b9be;font-size:clamp(15px,1.15vw,17px)}.founder-vision{border-left:2px solid #f15a2b;margin:28px 0 0;padding:6px 0 6px 20px;color:#f5f4f1;font-size:clamp(18px,2vw,25px);line-height:1.45;font-style:italic}.founder-details{display:grid;grid-template-columns:.85fr 1.15fr;gap:clamp(26px,5vw,76px);margin-top:clamp(46px,6vw,82px)}.founder-details h3{font-size:clamp(24px,3vw,38px);margin:12px 0 28px}.founder-value-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.founder-value-grid span{background:#1a1d20;border-radius:12px;padding:18px 15px;font-size:14px;color:#f1f1f1}.founder-exp-row{display:grid;grid-template-columns:105px 1fr;gap:15px;padding:17px 0;border-top:1px solid rgba(255,255,255,.12)}.founder-exp-label{font-size:10px;color:#f15a2b;letter-spacing:.12em;padding-top:4px}.founder-exp-row strong{font-size:15px;color:#f5f5f5;font-weight:600}.founder-exp-row p,.founder-exp-row small{font-size:13px;line-height:1.55;color:#aeb1b6;margin:4px 0 0}.founder-school-list{display:grid;gap:19px}.founder-school-list>div{display:flex;flex-direction:column;gap:3px}@media(max-width:760px){.founder-layout,.founder-details{grid-template-columns:1fr}.founder-art{height:270px}.founder-details{margin-top:42px}.founder-identity-footer{padding:20px 22px}.founder-story h3{margin-top:8px}.founder-exp-row{grid-template-columns:90px 1fr}.founder-section{padding-top:44px!important}}
+</style><style id="founder-v25-style">
+.founder-v25{padding:clamp(46px,6vw,84px) 0!important}.f25-top{padding-bottom:clamp(28px,4vw,56px);border-bottom:1px solid rgba(255,255,255,.14)}.f25-kicker{font-size:12px;letter-spacing:.16em;color:#f15a2b;margin-top:32px}.f25-kicker span{color:#777;margin:0 9px}.f25-name{font-size:clamp(48px,7.3vw,112px)!important;line-height:1.02!important;letter-spacing:-.055em!important;margin:16px 0 15px!important}.f25-lead{font-size:clamp(20px,2.4vw,32px);color:#c6c8c9;line-height:1.4;margin:0}.f25-lead em{color:#f15a2b}.f25-story{display:grid;grid-template-columns:minmax(170px,.36fr) minmax(0,.64fr);gap:clamp(24px,6vw,100px);padding:clamp(32px,5vw,66px) 0}.f25-story-label{display:flex;flex-direction:column;gap:13px;color:#f15a2b;font-size:11px;letter-spacing:.14em;font-weight:650}.f25-story-label small{color:#92979c;letter-spacing:normal;font-size:13px;font-weight:400}.f25-line{width:36px;height:2px;background:#f15a2b}.f25-copy{max-width:760px}.f25-copy p{font-size:clamp(15px,1.3vw,18px);line-height:1.78;color:#c0c3c6;margin:0 0 20px}.f25-copy p:last-child{margin-bottom:0}.f25-principles{padding:clamp(30px,4vw,56px);border-radius:20px;background:#1b1e21;display:grid;grid-template-columns:minmax(210px,.85fr) 1.15fr;gap:30px}.f25-principles h3,.f25-background h3{font-size:clamp(25px,3vw,43px)!important;line-height:1.2;margin:15px 0 0}.f25-value-list{display:grid;grid-template-columns:1fr 1fr;gap:0 22px}.f25-value-list div{padding:19px 0;border-bottom:1px solid #36393c;font-size:clamp(14px,1.2vw,17px);font-weight:550;display:flex;align-items:baseline;gap:15px}.f25-value-list span{font-size:11px;color:#f15a2b;letter-spacing:.1em}.f25-background{display:grid;grid-template-columns:minmax(210px,.8fr) minmax(0,1.2fr);gap:clamp(28px,7vw,120px);padding:clamp(48px,6vw,90px) 0 0}.f25-background-title>p{max-width:360px;color:#b1b5b8;font-size:15px;line-height:1.75;margin:20px 0 30px}.f25-us{border-left:2px solid #f15a2b;padding-left:20px;display:flex;flex-direction:column;gap:6px}.f25-us span,.f25-edu-title{font-size:11px;letter-spacing:.15em;color:#f15a2b}.f25-us strong{font-size:20px}.f25-us small,.f25-edu small{font-size:13px;color:#a9adb1;line-height:1.5}.f25-edu-title{display:flex;justify-content:space-between;padding:0 0 18px}.f25-edu-title span{color:#777}.f25-edu{display:grid;grid-template-columns:38px 1fr;gap:12px;padding:16px 0;border-top:1px solid rgba(255,255,255,.14)}.f25-edu>span{color:#f15a2b;font-size:12px}.f25-edu strong{display:block;font-size:clamp(14px,1.2vw,16px);font-weight:600;color:#f1f1f1;margin-bottom:4px}.f25-edu small{display:block}@media(max-width:760px){.f25-name{font-size:clamp(44px,12vw,72px)!important}.f25-kicker{margin-top:23px}.f25-story,.f25-principles,.f25-background{grid-template-columns:1fr}.f25-story{gap:23px}.f25-principles{padding:26px 22px;gap:14px}.f25-background{padding-top:44px;gap:38px}.f25-value-list{gap:0 14px}.f25-value-list div{font-size:13px;gap:9px;padding:16px 0}.f25-copy p{line-height:1.7}.f25-story-label{gap:8px}.f25-top{padding-bottom:30px}}
+@media(max-width:390px){.f25-value-list{grid-template-columns:1fr}.f25-value-list div{padding:12px 0}.f25-name{font-size:44px!important}}
+</style><style id="v26-polish">
+/* Leadership: restrained editorial hierarchy, not a second oversized page hero. */
+.founder-v25 .f25-top{padding-bottom:clamp(24px,3vw,38px)}
+.founder-v25 .f25-kicker{margin-top:19px;font-size:11px;letter-spacing:.13em}
+.founder-v25 .f25-name{font-size:clamp(34px,4vw,58px)!important;line-height:1.13!important;letter-spacing:-.035em!important;font-weight:550;margin:13px 0 12px!important;overflow-wrap:normal}
+.founder-v25 .f25-name em{font-weight:400}
+.founder-v25 .f25-lead{font-size:clamp(16px,1.65vw,22px);line-height:1.5;max-width:690px}
+.founder-v25 .f25-story{padding:clamp(25px,3.5vw,46px) 0}
+/* Native select with an explicit inline SVG chevron, positioned inside the control. */
+#projectCategory.filter-select{display:block;box-sizing:border-box;appearance:none;-webkit-appearance:none;-moz-appearance:none;padding:14px 48px 14px 18px!important;min-height:54px;line-height:1.35;background-color:#202427;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24' fill='none' stroke='%23f5f5f5' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 18px center;background-size:20px 20px;cursor:pointer}
+#projectCategory.filter-select::-ms-expand{display:none}
+@media(max-width:760px){.founder-v25 .f25-name{font-size:clamp(33px,8.2vw,45px)!important;letter-spacing:-.04em!important}.founder-v25 .f25-kicker{font-size:10px}.founder-v25 .f25-lead{font-size:17px}.founder-v25 .f25-story{padding-top:26px}#projectCategory.filter-select{width:100%;padding-right:50px!important;background-position:right 16px center}}
+@media(max-width:360px){.founder-v25 .f25-name{font-size:32px!important}}
+</style><style id="leader-v27">
+/* Compact, editorial leadership section: no portrait, duplicate hero, or oversized lettering. */
+#about .page-hero{padding-top:clamp(54px,7vw,100px)!important;padding-bottom:clamp(48px,6vw,82px)!important}
+#about .page-hero .editorial-heading{font-size:clamp(36px,5vw,70px)!important;line-height:1.12!important}
+#about .page-hero p{font-size:clamp(15px,1.35vw,19px)!important;line-height:1.65;max-width:610px}
+.leader27{padding:clamp(42px,5vw,76px) 0 clamp(50px,6vw,88px)!important;background:#121416}
+.l27-intro{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:clamp(28px,6vw,110px);align-items:start;padding-bottom:clamp(28px,4vw,50px);border-bottom:1px solid rgba(255,255,255,.13)}
+.l27-heading h2{font-size:clamp(30px,3.4vw,48px)!important;line-height:1.16!important;letter-spacing:-.035em;margin:17px 0 15px;font-weight:550;max-width:440px}
+.l27-heading h2 span{color:#f15a2b}
+.l27-role{font-size:11px!important;letter-spacing:.13em;color:#b6b9bc!important;margin:0!important;font-weight:650}.l27-role span{color:#f15a2b;margin:0 8px}
+.l27-overview{padding-top:3px}.l27-overview p,.l27-story p{font-size:clamp(15px,1.1vw,17px);line-height:1.76;color:#c0c3c6;margin:0 0 15px}.l27-overview p:last-child{margin-bottom:0}
+.l27-vision{display:flex;align-items:center;gap:clamp(20px,4vw,65px);padding:clamp(22px,3vw,39px) 0;border-bottom:1px solid rgba(255,255,255,.13)}.l27-vision>span{font-size:11px;letter-spacing:.14em;color:#f15a2b;white-space:nowrap}.l27-vision p{font-size:clamp(18px,2.1vw,27px);line-height:1.4;color:#f3f3f3;margin:0}.l27-vision em{color:#f15a2b}
+.l27-content{display:grid;grid-template-columns:1fr 1fr;gap:clamp(30px,7vw,115px);padding:clamp(36px,5vw,65px) 0}.l27-story h3,.l27-journey h3{font-size:clamp(25px,2.8vw,38px)!important;line-height:1.2;margin:13px 0 16px}.l27-story h3 em,.l27-journey h3 em{color:#f15a2b}.l27-values-grid{display:grid;grid-template-columns:1fr 1fr;gap:0 18px;margin-top:14px}.l27-values-grid div{border-bottom:1px solid rgba(255,255,255,.13);padding:15px 0;font-size:clamp(13px,1vw,16px);color:#eee;display:flex;gap:12px;align-items:baseline}.l27-values-grid span{color:#f15a2b;font-size:11px}
+.l27-journey{border-top:1px solid rgba(255,255,255,.13);padding-top:clamp(35px,5vw,65px);display:grid;grid-template-columns:minmax(0,.75fr) minmax(0,1.25fr);gap:clamp(30px,7vw,115px)}.l27-experience{display:flex;flex-direction:column;gap:6px;margin-top:35px;border-left:2px solid #f15a2b;padding-left:17px}.l27-experience span,.l27-edu-head{font-size:11px;letter-spacing:.12em;color:#f15a2b}.l27-experience strong{font-size:18px;color:#f4f4f4}.l27-experience small,.l27-education small{font-size:13px;line-height:1.5;color:#aeb2b5}.l27-edu-head{display:flex;justify-content:space-between;gap:10px;padding-bottom:12px}.l27-edu-head span{color:#888}.l27-education>div:not(.l27-edu-head){padding:13px 0;border-top:1px solid rgba(255,255,255,.12);display:flex;flex-direction:column;gap:4px}.l27-education strong{font-size:15px;font-weight:550;color:#f1f1f1}
+@media(max-width:760px){#about .page-hero{padding:38px 0 42px!important}#about .page-hero .editorial-heading{font-size:clamp(32px,8.5vw,46px)!important;line-height:1.15!important}#about .page-hero p{font-size:15px!important;line-height:1.6}.leader27{padding:37px 0 53px!important}.l27-intro,.l27-content,.l27-journey{grid-template-columns:minmax(0,1fr);gap:24px}.l27-heading h2{font-size:clamp(28px,7.5vw,37px)!important;line-height:1.18!important;max-width:none;margin:12px 0}.l27-role{font-size:10px!important}.l27-overview p,.l27-story p{font-size:15px;line-height:1.68}.l27-vision{display:block;padding:24px 0}.l27-vision p{font-size:19px;margin-top:10px}.l27-content{padding:34px 0;gap:27px}.l27-story h3,.l27-journey h3{font-size:27px!important}.l27-values-grid{gap:0 12px}.l27-values-grid div{font-size:13px;gap:7px;padding:14px 0}.l27-journey{padding-top:34px}.l27-experience{margin-top:22px}.l27-education strong{font-size:14px}.l27-edu-head{font-size:10px}}
+@media(max-width:380px){.l27-heading h2{font-size:27px!important}.l27-values-grid{grid-template-columns:1fr 1fr}.l27-values-grid div{font-size:12px}}
 </style></head><body><header class="topbar"><div class="wrap nav"><a aria-label="CHAMBUILD Home" class="logo" href="#home"><img alt="CHAMBUILD — Your Vision, Our Commitment" class="brand-logo" src="chambuild-logo-brand.png"/></a><nav aria-label="Primary navigation" class="navlinks" id="navlinks"><a href="#home">Home</a><a href="#about">About</a><a href="#services">Services</a><a href="#projects">Projects</a><a href="#standards">Standards</a><a href="#careers">Careers</a><a href="#contact" class="mobile-quote-link">Get a Quote <span>↗</span></a></nav><a class="btn nav-cta" href="#contact">Get a Quote <span>↗</span></a><button aria-controls="navlinks" aria-expanded="false" aria-label="Open menu" class="menu-toggle" id="menuToggle">☰</button></div></header><main id="main">
 <section aria-label="Home page" class="page active" id="home"><section aria-label="Scroll-controlled CHAMBUILD film" class="film-sequence" id="filmSequence"><div class="film-sticky"><video id="filmVideo" class="film-video" muted playsinline preload="auto" poster="chambuild-video-poster.jpg" aria-label="Architectural film controlled by scrolling"><source src="chambuild-scroll-video.mp4" type="video/mp4"></video><div class="film-shade"></div><div class="film-copy wrap"><span class="film-kicker">CHAMBUILD / THE GAMBIA</span><h1>Building with<br><em>purpose.</em></h1><p>Construction, engineering and property improvement, thoughtfully delivered.</p><a href="#services" class="btn">Explore our services ↗</a></div></div></section>
 <section aria-label="Explore project perspectives" class="motion-gallery"><div class="wrap"><div class="motion-heading"><div><div class="eyebrow">Inspiration in motion</div><h2>Places with <em>purpose.</em></h2></div><p>Explore the spaces and disciplines shaping our approach. Images are illustrative concepts, not completed CHAMBUILD commissions.</p><div class="motion-controls"><button aria-label="Previous image" id="motionPrev" type="button">←</button><button aria-label="Next image" id="motionNext" type="button">→</button></div></div><div aria-label="Image carousel, use arrow keys" class="motion-viewport" id="motionViewport" tabindex="0"><div class="motion-track" id="motionTrack">
@@ -363,7 +412,12 @@ p{font-size:clamp(.92rem,1vw,1.03rem);line-height:1.75;letter-spacing:0;max-widt
 <article class="motion-slide"><img alt="Modern property improvement" loading="lazy" src="https://images.unsplash.com/photo-1600585152915-d208bec867a1?auto=format&amp;fit=crop&amp;w=1100&amp;q=80"/><div class="motion-slide-content"><span>04 / Renovation</span><h3>New life for spaces</h3></div></article>
 <article class="motion-slide"><img alt="Sustainable green landscape" loading="lazy" src="https://images.unsplash.com/photo-1497440001374-f26997328c1b?auto=format&amp;fit=crop&amp;w=1100&amp;q=80"/><div class="motion-slide-content"><span>05 / Sustainability</span><h3>Thoughtful by nature</h3></div></article>
 </div></div><div aria-hidden="true" class="motion-progress"><i id="motionProgress"></i></div></div></section><div class="section alt"><div class="wrap"><div class="section-intro reveal"><div><div class="eyebrow">Capabilities</div><h2>Expertise across the <em>built environment.</em></h2></div><a class="btn outline" href="#services">All 13 Disciplines ↗</a></div><div class="grid g3" id="homeServices"></div></div></div></section>
-<section aria-label="About CHAMBUILD" class="page" id="about"><div class="page-hero"><div class="wrap"><div class="eyebrow">About CHAMBUILD</div><h1 class="editorial-heading">Built on purpose.<br/><em>Driven by people.</em></h1><p>We bring a considered, collaborative approach to construction, engineering and property improvement in The Gambia.</p></div></div><div class="section"><div class="wrap split"><div class="portrait reveal"><span>Leadership · CHAMBUILD</span></div><div class="reveal"><div class="eyebrow">Founder &amp; CEO</div><h2>Hamidou <em>Cham.</em></h2><p>CHAMBUILD is guided by a commitment to quality, professional integrity and meaningful progress in the built environment. Under the leadership of founder and CEO Hamidou Cham, the firm aims to unite thoughtful design, dependable delivery and lasting client relationships.</p><div class="quote">“Your Vision, Our Commitment.”</div><p>Our guiding promise is to approach every brief with care, clear communication and responsibility from planning through delivery.</p></div></div></div><div class="section alt"><div class="wrap"><div class="section-intro reveal"><div><div class="eyebrow">Corporate DNA</div><h2>Clear direction.<br/><em>Lasting ambition.</em></h2></div></div><div class="grid g2"><article class="card reveal"><span class="number">01 / MISSION</span><h3>Deliver with confidence.</h3><p>To support clients through reliable construction, engineering and property improvement services that prioritize quality, safety, transparency and practical outcomes.</p></article><article class="card reveal"><span class="number">02 / VISION</span><h3>Help shape tomorrow.</h3><p>To contribute to a stronger and more sustainable built environment in The Gambia through innovation, responsible practice and long-term client partnerships.</p></article></div></div></div><div class="section"><div class="wrap"><div class="eyebrow reveal">How we work</div><h2 class="reveal">Principled from <em>day one.</em></h2><div class="grid g3" id="aboutPillars"></div></div></div></section>
+<section aria-label="About CHAMBUILD" class="page" id="about"><div class="page-hero"><div class="wrap"><div class="eyebrow">About CHAMBUILD</div><h1 class="editorial-heading">Built on purpose.<br/><em>Driven by people.</em></h1><p>We bring a considered, collaborative approach to construction, engineering and property improvement in The Gambia.</p></div></div><div class="section leader27"><div class="wrap">
+<div class="l27-intro reveal"><div class="l27-heading"><div class="eyebrow">Founder &amp; Leadership</div><h2>Meet <span>Hamidou Cham.</span></h2><p class="l27-role">FOUNDER &amp; CEO <span> / </span> CHAMBUILD LTD</p></div><div class="l27-overview"><p>Hamidou Cham founded CHAMBUILD in 2024 with a commitment to quality construction, professionalism and long-term investment in The Gambia’s built environment.</p><p>With a background in civil engineering and construction management, he brings hands-on construction experience gained in the United States and an international education back home to The Gambia.</p></div></div>
+<div class="l27-vision reveal"><span>THE VISION</span><p>“To help build a stronger Gambia, <em>one project at a time.</em>”</p></div>
+<div class="l27-content reveal"><div class="l27-story"><div class="eyebrow">More than buildings</div><h3>Building for <em>people.</em></h3><p>For Hamidou, construction is more than putting up buildings. It is creating homes, strengthening communities, generating employment and raising standards across the industry.</p></div><div class="l27-values"><div class="eyebrow">What guides CHAMBUILD</div><div class="l27-values-grid"><div><span>01</span>Integrity</div><div><span>02</span>Accountability</div><div><span>03</span>Quality Workmanship</div><div><span>04</span>Client Commitment</div></div></div></div>
+<div class="l27-journey reveal"><div class="l27-journey-title"><div class="eyebrow">Background</div><h3>Experience &amp; <em>education.</em></h3><div class="l27-experience"><span>PROFESSIONAL EXPERIENCE</span><strong>United States</strong><small>Hands-on construction experience</small></div></div><div class="l27-education"><div class="l27-edu-head">EDUCATION <span>07 MILESTONES</span></div><div><strong>Tawfic Islamic School, Brikama</strong><small>Arabic school</small></div><div><strong>Alma Dina High School, Brikama</strong><small>Grades 7–8</small></div><div><strong>SBEC International High School</strong><small>High school</small></div><div><strong>Albert Einstein High School, USA</strong><small>Freshman through senior year</small></div><div><strong>Montgomery College</strong><small>Major in Civil Engineering, minor in Construction Management</small></div><div><strong>Louisiana State University (LSU)</strong><small>B.S. in Construction Engineering</small></div><div><strong>Louisiana State University (LSU)</strong><small>Master’s in Civil Engineering</small></div></div></div>
+</div></div><div class="section alt"><div class="wrap"><div class="section-intro reveal"><div><div class="eyebrow">Corporate DNA</div><h2>Clear direction.<br/><em>Lasting ambition.</em></h2></div></div><div class="grid g2"><article class="card reveal"><span class="number">01 / MISSION</span><h3>Deliver with confidence.</h3><p>To support clients through reliable construction, engineering and property improvement services that prioritize quality, safety, transparency and practical outcomes.</p></article><article class="card reveal"><span class="number">02 / VISION</span><h3>Help shape tomorrow.</h3><p>To contribute to a stronger and more sustainable built environment in The Gambia through innovation, responsible practice and long-term client partnerships.</p></article></div></div></div><div class="section"><div class="wrap"><div class="eyebrow reveal">How we work</div><h2 class="reveal">Principled from <em>day one.</em></h2><div class="grid g3" id="aboutPillars"></div></div></div></section>
 <section aria-label="Our services" class="page" id="services"><div class="page-hero"><div class="wrap"><div class="eyebrow">Our Expertise</div><h1 class="editorial-heading">End-to-end <em>capability.</em></h1><p>Thirteen complementary disciplines spanning the planning, construction, enhancement and ongoing care of built spaces.</p></div></div><div class="section"><div class="wrap"><div class="grid g3" id="serviceGrid"></div><p class="note">Technical scope, professional qualifications, approvals and delivery arrangements are confirmed for each project.</p></div></div></section>
 <section aria-label="Project categories" class="page" id="projects"><div class="page-hero"><div class="wrap"><div class="eyebrow">Design &amp; Project Perspectives</div><h1 class="editorial-heading">Spaces that <em>inspire.</em></h1><p>Explore the types of work and design thinking that inform our approach to the built environment.</p></div></div><div class="section"><div class="wrap"><div aria-label="Project category filters" class="filters" id="projectFilters"></div><div class="portfolio" id="projectGrid"></div><p class="note">Photography shown is illustrative of project categories and design direction, not a verified record of completed CHAMBUILD commissions.</p></div></div></section>
 <section aria-label="Our standards" class="page" id="standards"><div class="page-hero"><div class="wrap"><div class="eyebrow">Responsibility &amp; Standards</div><h1 class="editorial-heading">Excellence is <em>intentional.</em></h1><p>Quality, environmental stewardship and occupational safety guide the principles behind our approach.</p></div></div><div class="section"><div class="wrap split"><div class="reveal"><div class="eyebrow">International frameworks</div><h2>Globally informed.<br/><em>Locally committed.</em></h2><p>Our approach draws on internationally recognized management principles to encourage consistent delivery, responsible resource use and safer working environments.</p><p class="note">References to ISO frameworks indicate alignment with their principles; they do not represent a claim of ISO certification.</p></div><div class="reveal"><div class="standard standard-refined"><strong>ISO 9001</strong><div><h3>Quality Management</h3><p>Client focus, documented processes, quality assurance and continuous improvement.</p></div></div><div class="standard standard-refined"><strong>ISO 14001</strong><div><h3>Environmental Management</h3><p>Resource awareness, environmental responsibility and reduced project impact.</p></div></div><div class="standard standard-refined"><strong>ISO 45001</strong><div><h3>Occupational Health &amp; Safety</h3><p>Hazard awareness, safer work practices and protection of people on site.</p></div></div></div></div></div></section>
@@ -406,36 +460,47 @@ function schedule(){if(!scheduled){scheduled=true;requestAnimationFrame(update)}
 </script>
 
 <script>
-/* V21: compact gallery with no artificial scroll-height or empty tail. */
+/* V23: scroll-driven horizontal gallery, without a tall sticky spacer. */
 (()=>{
+ const gallery=document.querySelector('#home .motion-gallery');
  const viewport=document.getElementById('motionViewport');
  const track=document.getElementById('motionTrack');
  const bar=document.getElementById('motionProgress');
  const prev=document.getElementById('motionPrev');
  const next=document.getElementById('motionNext');
- if(!viewport||!track)return;
+ if(!gallery||!viewport||!track)return;
  const slides=[...track.querySelectorAll('.motion-slide')];
- let index=0, startX=null;
- function maxIndex(){return Math.max(0,slides.length-1)}
- function update(){
-  const first=slides[0];if(!first)return;
-  const gap=parseFloat(getComputedStyle(track).gap)||12;
-  const width=first.getBoundingClientRect().width+gap;
-  const maxShift=Math.max(0,track.scrollWidth-viewport.clientWidth);
-  const shift=Math.min(index*width,maxShift);
-  track.style.transform=`translate3d(${-shift}px,0,0)`;
-  if(bar)bar.style.transform=`scaleX(${maxShift?shift/maxShift:1})`;
-  if(prev)prev.disabled=index===0;
-  if(next)next.disabled=shift>=maxShift-1;
- }
- function move(delta){index=Math.max(0,Math.min(maxIndex(),index+delta));update()}
- prev?.addEventListener('click',()=>move(-1));
- next?.addEventListener('click',()=>move(1));
- viewport.addEventListener('keydown',e=>{if(e.key==='ArrowRight'||e.key==='ArrowLeft'){e.preventDefault();move(e.key==='ArrowRight'?1:-1)}});
- viewport.addEventListener('touchstart',e=>{startX=e.touches[0].clientX},{passive:true});
- viewport.addEventListener('touchend',e=>{if(startX===null)return;const dx=e.changedTouches[0].clientX-startX;if(Math.abs(dx)>35)move(dx<0?1:-1);startX=null},{passive:true});
- window.addEventListener('resize',update,{passive:true});
- update();
+ const reduced=matchMedia('(prefers-reduced-motion: reduce)');
+ let offset=0, raf=0, touchStart=null;
+ const maxShift=()=>Math.max(0,track.scrollWidth-viewport.clientWidth);
+ function render(){raf=0;const max=maxShift();offset=Math.max(0,Math.min(max,offset));track.style.transform=`translate3d(${-offset}px,0,0)`;if(bar)bar.style.transform=`scaleX(${max?offset/max:1})`;if(prev)prev.disabled=offset<=1;if(next)next.disabled=offset>=max-1;}
+ function schedule(){if(!raf)raf=requestAnimationFrame(render)}
+ function moveBy(amount){offset=Math.max(0,Math.min(maxShift(),offset+amount));schedule()}
+ function step(dir){const slide=slides[0];if(!slide)return;moveBy(dir*(slide.getBoundingClientRect().width+(parseFloat(getComputedStyle(track).gap)||12)))}
+ prev?.addEventListener('click',()=>step(-1));
+ next?.addEventListener('click',()=>step(1));
+ viewport.addEventListener('keydown',e=>{if(e.key==='ArrowRight'||e.key==='ArrowLeft'){e.preventDefault();step(e.key==='ArrowRight'?1:-1)}});
+ viewport.addEventListener('touchstart',e=>{touchStart=e.touches[0].clientX},{passive:true});
+ viewport.addEventListener('touchend',e=>{if(touchStart===null)return;const dx=e.changedTouches[0].clientX-touchStart;if(Math.abs(dx)>30)moveBy(-dx*1.2);touchStart=null},{passive:true});
+ // Only intercept vertical wheel movement while the gallery is in view and
+ // still has horizontal content in the direction of travel. Once at either
+ // end, normal page scrolling resumes immediately.
+ gallery.addEventListener('wheel',e=>{
+  if(reduced.matches||!document.getElementById('home').classList.contains('active'))return;
+  if(e.ctrlKey||e.metaKey)return;
+  const max=maxShift();if(max<=1)return;
+  const delta=Math.abs(e.deltaY)>=Math.abs(e.deltaX)?e.deltaY:e.deltaX;
+  if(!delta)return;
+  const rect=gallery.getBoundingClientRect();
+  if(rect.top>innerHeight*.78||rect.bottom<innerHeight*.2)return;
+  if((delta>0&&offset>=max-1)||(delta<0&&offset<=1))return;
+  e.preventDefault();
+  // Normalize wheel delta modes; a trackpad remains smoothly proportional.
+  const pixels=e.deltaMode===1?delta*16:e.deltaMode===2?delta*innerHeight:delta;
+  moveBy(pixels);
+ },{passive:false});
+ window.addEventListener('resize',schedule,{passive:true});
+ render();
 })();
 </script>
 
@@ -447,7 +512,7 @@ function schedule(){if(!scheduled){scheduled=true;requestAnimationFrame(update)}
  const root=document.documentElement;
  let ticking=false,targets=[];
  const clamp=(n,a,b)=>Math.max(a,Math.min(b,n));
- function collect(){targets=Array.from(document.querySelectorAll('.page.active .page-hero,.page.active .motion-slide,.page.active .project,.page.active .portrait,.page.active .feature-image,.page.active .card')).filter(el=>el.getClientRects().length);schedule()}
+ function collect(){targets=Array.from(document.querySelectorAll('.page.active .page-hero,.page.active .motion-slide,.page.active .project,.page.active .card')).filter(el=>el.getClientRects().length);schedule()}
  function frame(){ticking=false;
    const max=document.documentElement.scrollHeight-innerHeight;
    root.style.setProperty('--reading-progress',max>0?String(clamp(scrollY/max,0,1)):'0');
